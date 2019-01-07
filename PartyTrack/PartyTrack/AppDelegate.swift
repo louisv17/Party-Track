@@ -1,13 +1,4 @@
-//
-//Hello
-//Hello from me
 
-//  AppDelegate.swift
-//  PartyTrack
-//
-//  Created by Noam Winter (s5110785) on 07/01/2019.
-//  Copyright © 2019 Noam Winter (s5110785). All rights reserved.
-//
 
 import UIKit
 
