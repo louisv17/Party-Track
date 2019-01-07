@@ -15,9 +15,18 @@ class ViewController: UIViewController {
         
         locationManager.requestWhenInUseAuthorization()
         
+        locationManager.delegate = self
+        locationManager.startUpdatingLocation()
+        
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
 
 }
 
+
+extension ViewController: CLLocationManagerDelegate {
+    
+}
