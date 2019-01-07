@@ -41,5 +41,9 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Do you want Party Track to access your device&apos;s location?</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Do you want Party Track to access your device&apos;s location?</string>
 </dict>
 </plist>
