@@ -1,5 +1,6 @@
 //Hello
-
+//Check Issues on github for brief of what we are doing
+//that's all folks
 import UIKit
 import CoreLocation
 @UIApplicationMain
