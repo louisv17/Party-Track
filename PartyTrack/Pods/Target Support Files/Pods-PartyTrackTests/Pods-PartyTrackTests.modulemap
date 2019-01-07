@@ -1,0 +1,6 @@
+framework module Pods_PartyTrackTests {
+  umbrella header "Pods-PartyTrackTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
