@@ -72,12 +72,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-sH-e5e">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wo4-sH-e5e">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FvQ-sa-hJk" firstAttribute="bottom" secondItem="wo4-sH-e5e" secondAttribute="bottom" constant="203" id="SEf-nd-c6Y"/>
+                            <constraint firstAttribute="trailing" secondItem="wo4-sH-e5e" secondAttribute="trailing" id="YNl-L2-Nei"/>
+                            <constraint firstItem="wo4-sH-e5e" firstAttribute="leading" secondItem="ctf-lB-UzZ" secondAttribute="leading" id="bQp-AC-ncb"/>
+                            <constraint firstItem="wo4-sH-e5e" firstAttribute="top" secondItem="ctf-lB-UzZ" secondAttribute="top" id="xR3-gO-Ax2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FvQ-sa-hJk"/>
                     </view>
                 </viewController>
