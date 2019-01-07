@@ -38,7 +38,7 @@
                                     </segue>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-YJ-oq7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="party" translatesAutoresizingMaskIntoConstraints="NO" id="c3R-YJ-oq7">
                                 <rect key="frame" x="0.0" y="717" width="414" height="179"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="179" id="Irs-Mf-pVW"/>
@@ -48,7 +48,7 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c3R-YJ-oq7" firstAttribute="centerX" secondItem="gaE-3a-VI2" secondAttribute="centerX" id="0cR-PZ-S2R"/>
-                            <constraint firstItem="c3R-YJ-oq7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="34" id="82D-38-bQK"/>
+                            <constraint firstItem="c3R-YJ-oq7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="82D-38-bQK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3B-3H-eWj" secondAttribute="trailing" constant="100" id="FLX-Iv-DJP"/>
                             <constraint firstItem="c3R-YJ-oq7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OZr-vg-jaD"/>
                             <constraint firstItem="gaE-3a-VI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bCf-Uh-2PA"/>
