@@ -23,10 +23,10 @@ class ViewController: UIViewController {
         locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
-        for clubs in clubsManager.clubs    {
-//            locationManager.startMonitoring(for: clubs.region)
-//            mapView.addAnnotation(clubs)
-            
+        for clubs in clubsManager.clubs {
+            locationManager.startMonitoring(for: clubs.region)
+            mapView.addAnnotation(clubs)
+        
             
         }
         
@@ -36,7 +36,7 @@ class ViewController: UIViewController {
     }
     
     
-}
+
 
 
 extension ViewController: CLLocationManagerDelegate {
