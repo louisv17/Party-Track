@@ -11,6 +11,11 @@ class cameoClub: NSObject, MKAnnotation {
     let region: CLCircularRegion
     
     
-}
+    
+    
+    }
+    
+    
+
 
 
