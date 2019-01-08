@@ -22,7 +22,7 @@ class ClubManager {
         clubs.append(firestationClub)
         
         let lostCoordinate = CLLocationCoordinate2DMake(50.7180103, -1.8821358)
-        let lostClub = Club(coordinate: lostCoordinate)
+        let lostClub = Club(coordinate: lostCoordinate, title: "The Lost Paradise")
         clubs.append(lostClub)
     
         

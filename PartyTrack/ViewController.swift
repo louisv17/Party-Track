@@ -23,16 +23,15 @@ class ViewController: UIViewController {
         locationManager.delegate = self()
         locationManager.startUpdatingLocation()
         
-        for clubs in clubsManager.clubs {
+        for items in clubsManager.clubs {
             locationManager.startMonitoring(for: clubs.region)
-            mapView.addAnnotation(clubs)
+            mapView.addAnnotation(items)
+            
         
             
         }
         
         
-        
-        // Do any additional setup after loading the view, typically from a nib.
         
     }
 }
@@ -52,12 +51,20 @@ extension ViewController: CLLocationManagerDelegate {
             if annotation.title == region.identifier {
                 guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return}
                 annotationView.markerTintColor = .yellow
+                clubsManager.setActivateClubs(title: region.identifier)
+                
                 
                 
             }
         }
     }
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
+        
+    }
+        
+    }
+
     
-}
+
 
 
