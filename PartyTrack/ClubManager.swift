@@ -2,7 +2,7 @@
 import Foundation
 import CoreLocation
 
-
+//hello//
 class ClubManager {
     
     var clubs = [Club]()
