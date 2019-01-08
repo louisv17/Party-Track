@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		44C47FE29C353F64DD1DE7AC /* Pods_PartyTrackUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4899CAD0432B3F68051E6AB4 /* Pods_PartyTrackUITests.framework */; };
-		674A94F821E3A560001F5968 /* club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A94F721E3A560001F5968 /* club.swift */; };
-		674A94FA21E3A5AF001F5968 /* clubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A94F921E3A5AF001F5968 /* clubManager.swift */; };
+		674A94F821E3A560001F5968 /* Club.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A94F721E3A560001F5968 /* Club.swift */; };
+		674A94FA21E3A5AF001F5968 /* ClubManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674A94F921E3A5AF001F5968 /* ClubManager.swift */; };
 		9E462758F20B6924FB8D1D02 /* Pods_PartyTrack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFC5E4CAA11BD9C59D3AE6AE /* Pods_PartyTrack.framework */; };
 		BE3B87E221E388BE00F02B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B87E121E388BE00F02B60 /* AppDelegate.swift */; };
 		BE3B87E421E388BE00F02B60 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3B87E321E388BE00F02B60 /* ViewController.swift */; };
@@ -45,8 +45,8 @@
 		1FBA27A5BEFF3DF5D068A0BF /* Pods-PartyTrackTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTrackTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTrackTests/Pods-PartyTrackTests.release.xcconfig"; sourceTree = "<group>"; };
 		4004174902E7F6400CE3BEF6 /* Pods-PartyTrack.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTrack.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTrack/Pods-PartyTrack.release.xcconfig"; sourceTree = "<group>"; };
 		4899CAD0432B3F68051E6AB4 /* Pods_PartyTrackUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTrackUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		674A94F721E3A560001F5968 /* club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = club.swift; sourceTree = "<group>"; };
-		674A94F921E3A5AF001F5968 /* clubManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clubManager.swift; sourceTree = "<group>"; };
+		674A94F721E3A560001F5968 /* Club.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Club.swift; sourceTree = "<group>"; };
+		674A94F921E3A5AF001F5968 /* ClubManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClubManager.swift; sourceTree = "<group>"; };
 		83399725A231F7FB923BC02E /* Pods_PartyTrackTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PartyTrackTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B660BCE4EB4CDF1F7269032A /* Pods-PartyTrackUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PartyTrackUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PartyTrackUITests/Pods-PartyTrackUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE3B87DE21E388BE00F02B60 /* PartyTrack.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PartyTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -145,8 +145,8 @@
 			children = (
 				BE3B87E121E388BE00F02B60 /* AppDelegate.swift */,
 				BE3B87E321E388BE00F02B60 /* ViewController.swift */,
-				674A94F721E3A560001F5968 /* club.swift */,
-				674A94F921E3A5AF001F5968 /* clubManager.swift */,
+				674A94F721E3A560001F5968 /* Club.swift */,
+				674A94F921E3A5AF001F5968 /* ClubManager.swift */,
 				BE3B87E521E388BE00F02B60 /* Main.storyboard */,
 				BE3B87E821E388BF00F02B60 /* Assets.xcassets */,
 				BE3B87EA21E388BF00F02B60 /* LaunchScreen.storyboard */,
@@ -403,8 +403,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				674A94F821E3A560001F5968 /* club.swift in Sources */,
-				674A94FA21E3A5AF001F5968 /* clubManager.swift in Sources */,
+				674A94F821E3A560001F5968 /* Club.swift in Sources */,
+				674A94FA21E3A5AF001F5968 /* ClubManager.swift in Sources */,
 				BE3B87E421E388BE00F02B60 /* ViewController.swift in Sources */,
 				BE3B87E221E388BE00F02B60 /* AppDelegate.swift in Sources */,
 			);
