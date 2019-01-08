@@ -55,7 +55,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-6y-TZu">
-                                <rect key="frame" x="89" y="599" width="236" height="40"/>
+                                <rect key="frame" x="89" y="599" width="236" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Phr-VM-Adp"/>
                                 </constraints>

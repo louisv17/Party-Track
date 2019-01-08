@@ -5,10 +5,12 @@ import Foundation
 import MapKit
 import CoreLocation
 
-class Club: NSObject, MKAnnotation {
-    var coordinate: CLLocationCoordinate2D
+class cameoClub: NSObject, MKAnnotation {
+    var coordinate: cameoCoordinate 
     var title: String?
     let region: CLCircularRegion
+    
+    
 }
 
 
