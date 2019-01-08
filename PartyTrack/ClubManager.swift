@@ -5,11 +5,11 @@ import CoreLocation
 
 class ClubManager {
     
-    var clubs = club ()
+    var clubs = [Club]()
     
     init() {
         
-        let cameoCoordinate = CLLocationCoordinate2DMake(latitude:50.721992, longitude: -1.873731)
+        let cameoCoordinate = CLLocationCoordinate2DMake(50.721992, -1.873731)
         
     }
     

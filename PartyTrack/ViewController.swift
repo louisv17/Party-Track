@@ -24,8 +24,8 @@ class ViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         for clubs in clubsManager.clubs    {
-            locationManager.startMonitoring(for: clubs.region)
-            mapView.addAnnotation(clubs)
+//            locationManager.startMonitoring(for: clubs.region)
+//            mapView.addAnnotation(clubs)
             
             
         }
