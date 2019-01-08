@@ -6,7 +6,7 @@ import MapKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView:MKMapView!
     
     
     let locationManager = CLLocationManager()
@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         
         
         locationManager.requestWhenInUseAuthorization()
-        locationManager.delegate = self
+        locationManager.delegate = self()
         locationManager.startUpdatingLocation()
         
         for clubs in clubsManager.clubs {
@@ -33,13 +33,18 @@ class ViewController: UIViewController {
         
         
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
-    
 }
+    
+
+
 
 
 
 extension ViewController: CLLocationManagerDelegate {
+
+
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         
@@ -54,3 +59,5 @@ extension ViewController: CLLocationManagerDelegate {
     }
     
 }
+
+
