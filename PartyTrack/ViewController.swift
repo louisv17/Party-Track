@@ -19,7 +19,7 @@ class ViewController: UIViewController {
         mapView.userTrackingMode = .follow
         
         
-        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestAlwaysAuthorization()
         locationManager.delegate = self()
         locationManager.startUpdatingLocation()
         
@@ -36,13 +36,9 @@ class ViewController: UIViewController {
     }
 }
     
-
-
-
-
-
-extension ViewController: CLLocationManagerDelegate {
-
+   extension ViewController: CLLocationManagerDelegate {
+    
+    class cameoClub {
 
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
@@ -51,7 +47,20 @@ extension ViewController: CLLocationManagerDelegate {
             if annotation.title == region.identifier {
                 guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return}
                 annotationView.markerTintColor = .yellow
-                clubsManager.setActivateClubs(title: region.identifier)
+                
+                    
+                }
+            if annotation.title == region.identifier{
+                guard let annotationView = String(for: annotation) as? MKMarkerAnnotationView else{
+                    return}
+                
+                annotationView.print (title: cameoClub)
+                }
+            
+
+
+
+            clubsManager.setActivateClubs(title: region.identifier)
                 
                 
                 
@@ -61,8 +70,7 @@ extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
     }
-        
-    }
+
 
     
 
