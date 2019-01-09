@@ -33,9 +33,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Kzk-EW-xDM" kind="popoverPresentation" popoverAnchorView="w3B-3H-eWj" id="pc3-eO-1uk">
-                                        <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                    </segue>
+                                    <segue destination="Kzk-EW-xDM" kind="show" id="3NP-4Z-5fy"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rNX-GK-qzZ">
@@ -54,8 +52,8 @@
                                     <constraint firstAttribute="height" constant="179" id="Irs-Mf-pVW"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-6y-TZu">
-                                <rect key="frame" x="89" y="599" width="236" height="35"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q42-6y-TZu">
+                                <rect key="frame" x="89" y="638" width="236" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Phr-VM-Adp"/>
                                 </constraints>
@@ -63,6 +61,9 @@
                                 <state key="normal" title="The Old Firestation">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Kzk-EW-xDM" kind="show" id="8bW-NF-T36"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -75,13 +76,10 @@
                             <constraint firstItem="rNX-GK-qzZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="XQJ-gA-0Rd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="rNX-GK-qzZ" secondAttribute="trailing" constant="89" id="a2m-vb-6cN"/>
                             <constraint firstItem="gaE-3a-VI2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bCf-Uh-2PA"/>
-                            <constraint firstItem="rNX-GK-qzZ" firstAttribute="leading" secondItem="Q42-6y-TZu" secondAttribute="leading" id="eVI-Ct-JZT"/>
                             <constraint firstItem="gaE-3a-VI2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="hcj-xA-aJS"/>
                             <constraint firstItem="w3B-3H-eWj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="89" id="ic4-07-6a3"/>
-                            <constraint firstItem="c3R-YJ-oq7" firstAttribute="top" secondItem="Q42-6y-TZu" secondAttribute="bottom" constant="78" id="ieR-YE-Vhd"/>
                             <constraint firstItem="gaE-3a-VI2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="o4h-OS-fSy"/>
                             <constraint firstItem="w3B-3H-eWj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-134" id="v0r-Op-2pi"/>
-                            <constraint firstItem="rNX-GK-qzZ" firstAttribute="trailing" secondItem="Q42-6y-TZu" secondAttribute="trailing" id="wrs-Se-W08"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -131,4 +129,7 @@
         <image name="Screen Shot 2019-01-07 at 13.49.10" width="2028" height="556"/>
         <image name="party" width="1920" height="1080"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="3NP-4Z-5fy"/>
+    </inferredMetricsTieBreakers>
 </document>
