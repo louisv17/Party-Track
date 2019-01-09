@@ -60,19 +60,9 @@ class ViewController: UIViewController {
                     return}
                 
                 annotationView.print (cameoClub:title)
-
-                annotationView.print (title: cameoClub)
-
-                }
-            
-
-
-
+}
             clubsManager.setActivateClubs(title: region.identifier)
-                
-                
-                
-            }
+                }
         }
     }
 
@@ -96,10 +86,8 @@ class ViewController: UIViewController {
                             return}
                         
                     annotationView.print (haloClub:title)
-                        
-                
-                            
                         }
+                      clubsManager.setActivateClubs(title: region.identifier)
                     }
         }
         
@@ -126,12 +114,13 @@ class lostClub {
                     return}
                 annotationView.print (title: lostClub)
                }
+              clubsManager.setActivateClubs(title: region.identifier)
 }
         
         func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
             
             for annotation in mapView.annotations {
-                if annotation.title == region.identifier {
+                if annotation.subtitle == region.identifier {
                    guard var annotationView = Int(for: annotation) as? MKMarkerAnnotationView else{
                         return}
                     
