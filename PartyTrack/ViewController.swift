@@ -39,8 +39,12 @@ class ViewController: UIViewController {
    extension ViewController: CLLocationManagerDelegate {
     
     class cameoClub {
+
   
     }
+
+
+
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         
@@ -56,6 +60,9 @@ class ViewController: UIViewController {
                     return}
                 
                 annotationView.print (cameoClub:title)
+
+                annotationView.print (title: cameoClub)
+
                 }
             
 
@@ -68,6 +75,7 @@ class ViewController: UIViewController {
             }
         }
     }
+
     func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion)
     
     
@@ -94,6 +102,10 @@ class ViewController: UIViewController {
                         }
                     }
         }
+        
+    }
+
+    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
         
     }
 
