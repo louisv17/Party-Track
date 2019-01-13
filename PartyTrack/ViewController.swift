@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         locationManager.startUpdatingLocation()
         
         for items in clubsManager.clubs {
-            locationManager.startMonitoring(for: Clubs.region)
+            locationManager.startMonitoring(for: items.region)
             mapView.addAnnotation(items)
             
         
@@ -38,10 +38,10 @@ class ViewController: UIViewController {
     
    extension ViewController: CLLocationManagerDelegate {
     
-    class cameoClub {
+    
 
   
-    }
+    
 
 
 
@@ -59,4 +59,5 @@ class ViewController: UIViewController {
 }
 }
       
+
 }

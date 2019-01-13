@@ -6,27 +6,31 @@ import MapKit
 import CoreLocation
 
 class Club: NSObject, MKAnnotation {
-    var coordinate: cameoCoordinate 
+    var coordinate: CLLocationCoordinate2D 
     var title: String?
     let region: CLCircularRegion
     var subtitle: String?
     
-  init ( title: String, subtitle:Int){
+    init (coordinate: CLLocationCoordinate2D, title: String){
+        self.coordinate = coordinate
     self.title = title
-    self.subtitle = subtitle
+        region = CLCircularRegion(center: coordinate , radius: 200, identifier: title)
+    
     }
 
 }
 
 class lostClub: NSObject, MKAnnotation {
-    var coordinate: lostCoordinate
+    var coordinate: CLLocationCoordinate2D
     var title: String?
     let region: CLCircularRegion
     var subtitle: String?
     
-    init ( title: String, subtitle:Int){
+    init (coordinate: CLLocationCoordinate2D, title: String){
+        self.coordinate = coordinate
         self.title = title
-        self.subtitle = subtitle
+        region = CLCircularRegion(center: coordinate, radius: 200, identifier: title)
+        
     }
     
 }
