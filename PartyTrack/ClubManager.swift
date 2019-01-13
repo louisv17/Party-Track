@@ -9,16 +9,16 @@ class ClubManager {
     init() {
         
         let cameoCoordinate = CLLocationCoordinate2DMake(50.721992, -1.873731)
-        let cameoClub = Club(coordinate: cameoCoordinate, title: "Cameo")
+        let cameoClub = Club(title: "Cameo", coordinate: cameoCoordinate)
         clubs.append(cameoClub)
         
         
         let haloCoordinate = CLLocationCoordinate2DMake(50.7193855, -1.882557)
-        let haloClub = Club(coordinate: haloCoordinate, title: "Halo Nightclub")
+        let haloClub = haloClub(coordinate: haloCoordinate, title: "Halo Nightclub")
         clubs.append(haloClub)
         
         let firestationCoordinate = CLLocationCoordinate2DMake(50.7230995, -1.8671757)
-        let firestationClub = Club(coordinate: firestationCoordinate, title: "The Old Firestation")
+        let firestationClub = Club(title: "The Old Firestation", coordinate: firestationCoordinate)
         clubs.append(firestationClub)
         
         let lostCoordinate = CLLocationCoordinate2DMake(50.7180103, -1.8821358)
@@ -27,7 +27,7 @@ class ClubManager {
     
         
         
-        func setActivateClub(title: String)
+        func setActivateClub(title: String){
     
     
    
@@ -38,3 +38,4 @@ class ClubManager {
     }
 }
 
+}

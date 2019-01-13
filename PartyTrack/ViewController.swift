@@ -20,11 +20,11 @@ class ViewController: UIViewController {
         
         
         locationManager.requestAlwaysAuthorization()
-        locationManager.delegate = self()
+        locationManager.delegate = self
         locationManager.startUpdatingLocation()
         
         for items in clubsManager.clubs {
-            locationManager.startMonitoring(for: clubs.region)
+            locationManager.startMonitoring(for: Clubs.region)
             mapView.addAnnotation(items)
             
         
@@ -55,77 +55,7 @@ class ViewController: UIViewController {
                 
                     
                 }
-            if annotation.title == region.identifier{
-                guard let annotationView = String(for: annotation) as? MKMarkerAnnotationView else{
-                    return}
-                
-                annotationView.print (cameoClub:title)
-}
-            clubsManager.setActivateClubs(title: region.identifier)
-                }
-        }
-    }
-
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion)
-    
-    
-    
-    {
-        class haloClub
-        {func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-                
-                for annotation in mapView.annotations {
-                    if annotation.title == region.identifier {
-                        guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return}
-                        annotationView.markerTintColor = .yellow
-                        
-                        
-                    }
-                    if annotation.title == region.identifier{
-                        guard let annotationView = String(for: annotation) as? MKMarkerAnnotationView else{
-                            return}
-                        
-                    annotationView.print (haloClub:title)
-                        }
-                      clubsManager.setActivateClubs(title: region.identifier)
-                    }
-        }
-        
-    }
-
-    func locationManager(_ manager: CLLocationManager, didExitRegion region: CLRegion) {
-        
-    }
-
-
-    }
-class lostClub {
-    
-    func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        
-        for annotation in mapView.annotations {
-            if annotation.title == region.identifier {
-                guard let annotationView = mapView.view(for: annotation) as? MKMarkerAnnotationView else { return}
-                annotationView.markerTintColor = .yellow
-                
-                }
-            if annotation.title == region.identifier{
-                guard let annotationView = String(for: annotation) as? MKMarkerAnnotationView else{
-                    return}
-                annotationView.print (title: lostClub)
-               }
-              clubsManager.setActivateClubs(title: region.identifier)
-}
-        
-        func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
-            
-            for annotation in mapView.annotations {
-                if annotation.subtitle == region.identifier {
-                   guard var annotationView = Int(for: annotation) as? MKMarkerAnnotationView else{
-                        return}
-                    
-                    annotationView.print("subtitle"+1)}
-}
+           
 }
 }
       
