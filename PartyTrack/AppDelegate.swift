@@ -6,6 +6,8 @@ import CoreLocation
 import UIKit
 import Firebase
 
+// for this to work it is important to be on the workspace version of this file
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
@@ -17,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             FirebaseApp.configure()
             return true
     }
+    // This is the database system, it doesnt work as the cocoapods need to be reinstalled
 
 
 
@@ -45,3 +48,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 
+}
